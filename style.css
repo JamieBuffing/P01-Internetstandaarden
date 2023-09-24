@@ -7,6 +7,11 @@ body {
     background-color: #FFFADD;
     color: #22668D;
 }
+footer {
+    width: 100%;
+    height: 10%;
+    background-color: #FFCC70;
+}
 a {
     color: #22668D;
     text-decoration: none;
@@ -56,35 +61,42 @@ ul {
   
   li:last-child {
     border-right: none;
+    border-left: 1px solid #FFFADD;
   }
 
   .active {
     background-color: #8ECDDD;
   }
-.content {
-    border-style: solid;
-    border-radius: 25px;
-    border-color: black;
-    mask-border-width: 10px;
-    width: 60%;
-    height: 50vh;
-    margin-left: 10%;
-    text-align: center;
+.flex-container {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: DodgerBlue;
+    width: 90%;
+    margin-left: 5%;
+    z-index: -1;
 }
-.right {
-  position: absolute;
-  border-style: solid;
-  width: 40%;
-  height: auto;
-  margin: 10vw 5vw 5vw 5vw;
-  left: 50%;
-  z-index: -1;
+.flex-container > section {
+  background-color: #f1f1f1;
+  width: 40vmax;
+  height: 50vh;
+  margin: 10px auto 10px auto;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
 }
-.left {
-  position: absolute;
-  border-style: solid;
-  width: 40%;
+.flex-container:first-child {
+    margin-top: 20vh;
+}
+.footer4 {
+  position: relative;
+    flex-wrap: wrap;
+    display: flex;
+}
+.footer4 > section {
+  width: 22vmax;
   height: auto;
-  margin: 10vw 5vw 5vw 5vw;
-  z-index: -1;
+}
+.footer4:first-child {
+  margin-left: 2vw;
 }
