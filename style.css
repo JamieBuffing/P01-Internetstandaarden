@@ -31,7 +31,7 @@ h1 {
 header {
     border-style: none;
 }
-ul {
+header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -42,12 +42,12 @@ ul {
     top: 0;
   }
   
-  li {
+  header li {
     float: left;
     border-right: 1px solid #FFFADD;
   }
   
-  li a {
+  header li a {
     display: block;
     color: white;
     text-align: center;
@@ -55,11 +55,11 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover {
+  header li a:hover {
     background-color: #111;
   }
   
-  li:last-child {
+  header li:last-child {
     border-right: none;
     border-left: 1px solid #FFFADD;
   }
@@ -99,4 +99,11 @@ ul {
 }
 .footer4:first-child {
   margin-left: 2vw;
+}
+
+footer ul {
+  margin-left: 10%;
+}
+.socials {
+  text-align: right;
 }
