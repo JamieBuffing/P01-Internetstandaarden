@@ -21,6 +21,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 3;
 }
 h1 {
     text-align: center;
@@ -69,25 +70,72 @@ header ul {
   }
 .flex-container {
     position: relative;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     display: flex;
-    background-color: DodgerBlue;
+    background-color: #22668D;
     width: 90%;
     margin-left: 5%;
-    z-index: -1;
+    z-index: 1;
 }
 .flex-container > section {
   background-color: #f1f1f1;
   width: 40vmax;
-  height: 50vh;
+  height: auto;
   margin: 10px auto 10px auto;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
 }
 .flex-container:first-child {
     margin-top: 20vh;
 }
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10vh;
+  transition: 1s ease;
+}
+.image:hover {
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  margin: 10px auto 10px auto;
+  background-color: #22668D;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 40vmax;
+  height: 0;
+  transition: 1s ease;
+  bottom: 0;
+  border-radius: 3vh 3vh 0 0;
+}
+.container:hover .overlay {
+  height: 50%;
+}
+.container:hover .image {
+  border-radius: 0vh;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  margin: 10px;
+}
+.hovertest {
+  position: absolute;
+  text-align: center;
+  width: 10vmax;
+  margin-left: 15vmax;
+  color: white;
+  background-color: #22668D;
+  border-radius: 10px 10px 10px 10px;
+  transition: 1s ease;
+}
+.container:hover .hovertest {
+  opacity: 0;
+  transition: 1s ease;
+}
+
+
 .footer4 {
   position: relative;
     flex-wrap: wrap;
