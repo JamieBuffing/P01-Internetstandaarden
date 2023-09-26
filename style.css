@@ -59,7 +59,9 @@ header ul {
   header li a:hover {
     background-color: #111;
   }
-  
+  header li a:focus {
+    border-style: dotted;
+  }
   header li:last-child {
     border-right: none;
     border-left: 1px solid #FFFADD;
@@ -68,18 +70,33 @@ header ul {
   .active {
     background-color: #8ECDDD;
   }
+
+.movbox {
+  position: absolute;
+  animation-name: lap;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes lap {
+  0%   {left:-25px; top:-25px; transform: rotate(0deg);}
+  25%  {left:100%; top:-25px; transform: rotate(1080deg);}
+  50%  {left:100%; top:100%; transform: rotate(3240deg);}
+  75%  {left:-25px; top:100%; transform: rotate(4320deg);}
+  100% {left:-25px; top:-25px; transform: rotate(6480deg);}
+}
 .flex-container {
     position: relative;
     flex-wrap: wrap-reverse;
     display: flex;
     background-color: #22668D;
-    width: 90%;
-    margin-left: 5%;
+    width: 80%;
+    margin-left: 10%;
     z-index: 1;
 }
-.flex-container > section {
+.half {
   background-color: #f1f1f1;
-  width: 40vmax;
+  width: 35vmax;
   height: auto;
   margin: 10px auto 10px auto;
 }
@@ -102,7 +119,7 @@ header ul {
   background-color: #22668D;
   opacity: 0.8;
   overflow: hidden;
-  width: 40vmax;
+  width: 35vmax;
   height: 0;
   transition: 1s ease;
   bottom: 0;
@@ -110,21 +127,27 @@ header ul {
 }
 .container:hover .overlay {
   height: 50%;
+  margin-bottom: 13%;
 }
 .container:hover .image {
   border-radius: 0vh;
+}
+.container:hover .text {
+  font-size: 13px;
+  transition: 1s ease;
 }
 .text {
   color: white;
   font-size: 20px;
   position: absolute;
   margin: 10px;
+  transition: 1s ease;
 }
 .hovertest {
   position: absolute;
   text-align: center;
   width: 10vmax;
-  margin-left: 15vmax;
+  margin-left: 12.5vmax;
   color: white;
   background-color: #22668D;
   border-radius: 10px 10px 10px 10px;
