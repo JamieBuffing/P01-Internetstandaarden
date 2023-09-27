@@ -93,12 +93,21 @@ header ul {
     width: 80%;
     margin-left: 10%;
     z-index: 1;
+    border-radius: 50px;
 }
 .half {
   background-color: #f1f1f1;
   width: 35vmax;
   height: auto;
   margin: 10px auto 10px auto;
+  border-radius: 10vh;
+}
+.maintext {
+  margin: 10px;
+}
+
+.title {
+  text-align: center;
 }
 .flex-container:first-child {
     margin-top: 20vh;
@@ -122,18 +131,18 @@ header ul {
   width: 35vmax;
   height: 0;
   transition: 1s ease;
-  bottom: 0;
-  border-radius: 3vh 3vh 0 0;
+  top: 0;
+  border-radius: 0 0 3vh 3vh;
 }
 .container:hover .overlay {
-  height: 50%;
-  margin-bottom: 13%;
+  height: 445px;
+  margin-bottom: 0%;
+  transition: 3s ease-out;
 }
 .container:hover .image {
   border-radius: 0vh;
 }
 .container:hover .text {
-  font-size: 13px;
   transition: 1s ease;
 }
 .text {
