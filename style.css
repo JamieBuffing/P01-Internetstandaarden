@@ -187,3 +187,12 @@ footer ul {
 .socials {
   text-align: right;
 }
+footer a:hover {
+  color: #22668D;
+  font-size: 125%;
+  text-shadow: 0 0 2px black;
+  transition: 0.5s;
+}
+footer a {
+  transition: 0.5s;
+}
