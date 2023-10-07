@@ -3,20 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   background-color: #FFFADD;
   color: #22668D;
 }
-footer {
-  width: 100%;
-  height: 10%;
-  background-color: #FFCC70;
-}
 a {
   color: #22668D;
   text-decoration: none;
-
 }
 nav {
   position: fixed;
@@ -30,218 +23,44 @@ h1 {
   background-color: #FFFADD;
   width: 100%;
 }
+/*header*/
 header {
   border-style: none;
 }
 header ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: #FFCC70;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  }
-  
-  header li {
+}
+header li {
   float: left;
   border-right: 1px solid #FFFADD;
-  }
-  
-  header li a {
+}
+header li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  }
-  
-  header li a:hover {
+}
+header li a:hover {
   background-color: #22668D;
-  }
-  header li a:focus {
+}
+header li a:focus {
   border-style: dotted;
-  }
-  header li:last-child {
+}
+header li:last-child {
   float: right;
   border-right: none;
   border-left: 1px solid #FFFADD;
-  }
-
+}
 #active {
   background-color: #8ECDDD;
 }
-
-#movbox {
-  position: absolute;
-  animation-name: lap;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes lap {
-  0%   {left:-25px; top:-25px; transform: rotate(0deg);}
-  25%  {left:100%; top:-25px; transform: rotate(1080deg);}
-  50%  {left:100%; top:100%; transform: rotate(3240deg);}
-  75%  {left:-25px; top:100%; transform: rotate(4320deg);}
-  100% {left:-25px; top:-25px; transform: rotate(6480deg);}
-}
-
-.flex-container {
-  position: relative;
-  flex-wrap: wrap-reverse;
-  display: flex;
-  background-color: #22668D;
-  width: 80%;
-  margin-left: 10%;
-  z-index: 1;
-  border-radius: 50px;
-}
-
-.half {
-  background-color: #f1f1f1;
-  width: 35vmax;
-  height: auto;
-  margin: 10px auto 10px auto;
-  border-radius: 10vh;
-}
-
-p {
-  padding-top: 2%;
-  margin: 2%;
-}
-
-
-#title {
-  text-align: center;
-}
-
-.flex-container:first-child {
-  margin-top: 20vh;
-}
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 10vh;
-  transition: 1s ease;
-}
-
-.image:hover {
-  width: 100%;
-}
-
-#overlay {
-  position: absolute;
-  margin: 10px auto 10px auto;
-  background-color: #22668D;
-  opacity: 0.8;
-  overflow: hidden;
-  width: 35vmax;
-  height: 0;
-  transition: 1s ease;
-  top: 0;
-  border-radius: 3vh 3vh 3vh 3vh;
-}
-
-.container:hover #overlay {
-  height: 445px;
-  margin-bottom: 0%;
-  transition: 3s ease-out;
-}
-
-.container:hover .image {
-  border-radius: 3vh;
-}
-
-.container:hover .text {
-  transition: 1s ease;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  margin: 10px;
-  transition: 1s ease;
-}
-
-#hovertest {
-  position: absolute;
-  text-align: center;
-  width: 10vmax;
-  margin-left: 12.5vmax;
-  color: white;
-  background-color: #22668D;
-  border-radius: 10px 10px 10px 10px;
-  transition: 1s ease;
-}
-
-.container:hover #hovertest {
-  opacity: 0;
-  transition: 1s ease;
-}
-
-.footer4 {
-  position: static;
-  bottom: 0;
-  flex-wrap: wrap;
-  display: flex;
-  margin-top: 15%;
-}
-
-.footer4 > section {
-  width: 22vmax;
-  height: auto;
-  bottom: 0;
-}
-
-.footer4:first-child {
-  margin-left: 2vw;
-}
-
-footer ul {
-  margin-left: 10%;
-}
-
-.socials {
-  text-align: right;
-}
-
-.socials a {
-  padding-top: 4%;
-}
-footer a:hover {
-  color: #22668D;
-  font-size: 125%;
-  text-shadow: 0 0 2px black;
-  transition: 0.5s;
-}
-
-footer a {
-  transition: 0.5s;
-}
-.box {
-  display: flex;
-  width: 75%;
-  border-style: solid;
-  border-radius: 2vh;
-  height: auto;
-  margin-left: 2%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-.box img {
-  width: 50%;
-  height: 50%;
-  margin-bottom: 0;
-  border-radius: 1.5vh;
-}
-.bottomtext {
-  position: absolute;
-}
+/*einde header*/
 .mainarea {
   width: 80%;
   margin-top: 15vh;
@@ -264,13 +83,190 @@ footer a {
   margin-top: 0%;
   margin-left: 5%;
 }
+/*footer*/
+footer {
+  width: 100%;
+  background-color: #FFCC70;
+}
+footer ul {
+  margin-left: 10%;
+}
+.footer4 {
+  position: static;
+  width: 100%;
+  bottom: 0;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 15%;
+  background-color: #FFCC70;
+}
+footer a {
+  transition: 0.5s;
+}
+.footer4 > section {
+  width: 22vmax;
+  height: auto;
+  bottom: 0;
+  padding: 1%;
+}
+footer a:hover {
+  color: #22668D;
+  font-size: 125%;
+  text-shadow: 0 0 2px black;
+  transition: 0.5s;
+}
+.socials {
+  text-align: right;
+}
+.socials a {
+  padding-top: 4%;
+}
+/*einde footer*/
+/*dit was voor alle pagina's*/
+/*index.html*/
+/*smiley*/
+#movbox {
+  position: absolute;
+  animation-name: lap;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes lap {
+  0%   {left:-25px; top:-25px; transform: rotate(0deg);}
+  25%  {left:100%; top:-25px; transform: rotate(1080deg);}
+  50%  {left:100%; top:100%; transform: rotate(3240deg);}
+  75%  {left:-25px; top:100%; transform: rotate(4320deg);}
+  100% {left:-25px; top:-25px; transform: rotate(6480deg);}
+}
+.flex-container {
+  position: relative;
+  flex-wrap: wrap-reverse;
+  display: flex;
+  background-color: #22668D;
+  width: 80%;
+  margin-left: 10%;
+  z-index: 1;
+  border-radius: 50px;
+}
+.half {
+  background-color: #f1f1f1;
+  width: 35vmax;
+  height: auto;
+  margin: 10px auto 10px auto;
+  border-radius: 5vh;
+}
+.half p, h2 {
+  padding-top: 2%;
+  margin: 2%;
+}
+.half p:last-child {
+  margin-bottom: 10%;
+}
+#title {
+  text-align: center;
+}
+.flex-container:first-child {
+  margin-top: 20vh;
+}
+.imageback {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5vh;
+  transition: 1s ease;
+}
+/*hover*/
+#overlay {
+  position: absolute;
+  margin: 10px auto 10px auto;
+  background-color: #22668D;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 35vmax;
+  height: 0;
+  transition: 1s ease;
+  top: 0;
+  border-radius: 3vh 3vh 3vh 3vh;
+}
+.container:hover #overlay {
+  height: 445px;
+  margin-bottom: 0%;
+  transition: 3s ease-out;
+}
+.container:hover .image {
+  border-radius: 3vh;
+}
+.container:hover .text {
+  transition: 1s ease;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  margin: 10px;
+  transition: 1s ease;
+}
+#hoverelement {
+  position: absolute;
+  text-align: center;
+  width: 10vmax;
+  margin-left: 12.5vmax;
+  color: white;
+  background-color: #22668D;
+  border-radius: 10px 10px 10px 10px;
+  transition: 1s ease;
+}
+.container:hover #hoverelement {
+  opacity: 0;
+  transition: 1s ease;
+}
+/*eind index.html*/
+/*portfolio.html*/
+.box {
+  display: flex;
+  width: 90%;
+  border-style: solid;
+  border-radius: 2vh;
+  height: auto;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: #d6d1b2;
+}
+.box img {
+  width: 25%;
+  height: 25%;
+  margin-bottom: 0;
+  border-radius: 1.5vh;
+  transition: 3s;
+}
+.box img:hover {
+  width: 50%;
+  height: 50%;
+  transition: 5s;
+}
+.box p {
+  margin-top: 6%;
+}
+/*einde portfolio.html*/
+/*info.html*/
+.resize {
+  resize: both;
+  overflow: auto;
+} 
+.mainarea form {
+  margin-left: 5%;
+  margin-bottom: 3%;  
+}
 #profile {
   border-radius: 50%;
-  margin-top: -5%;
+  margin-top: -3%;
   height: 15vh;
   width: 15vh;
   float: right;
   transition: 3s ease;
+  margin-right: 2%;
 }
 #profile:hover {
   border-radius: 15%;
@@ -280,3 +276,34 @@ footer a {
   width: 30vh;
   transition: 3s ease;
 }
+/*eind info.html*/
+/*contact.html*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  border: 3px solid #ddd;
+  overflow-x:auto;
+  background-color: #c8c4c4
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 3px solid #ddd;
+}
+tr:nth-child(even){
+  background-color: #f2f2f2
+}
+#contact {
+  position: relative;
+  margin-top: 15vh;
+  margin-left: 5%;
+}
+th a:hover {
+  text-shadow: 0 0 5px #FF0000;
+  transition: 0.25s;
+}
+th a {
+  transition: 0.5s;
+}
+/*eind contact.html*
